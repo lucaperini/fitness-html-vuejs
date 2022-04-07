@@ -1,4 +1,4 @@
-# fitness-html-vuejs
+# proj-html-vuejs
 
 ## Project setup
 ```
