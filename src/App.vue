@@ -4,6 +4,7 @@
     <Jumbo />
     <Services />
     <Playlist />
+    <Mailing />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from './components/Header.vue'
 import Jumbo from './components/Jumbo.vue'
 import Services from './components/Services.vue'
 import Playlist from './components/Playlist.vue'
+import Mailing from './components/Mailing.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     Jumbo,
     Services,
     Playlist,
+    Mailing,
     
   }
 }
