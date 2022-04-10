@@ -9,8 +9,8 @@
                 <h1 class="title mb-2">Take Control Of Your Health</h1>
                 <i class="fas fa-water text-center text-warning fs-1"></i>
                 <h5 class="under-title pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab perspiciatis corrupti...</h5>
-                <button class="btn bg-primary rounded-pill schedule text-white btn-youtube mr-1"><i class="fab fa-youtube"></i>Visit my youtube channel</button>
-                <button class="btn btn-outline-info rounded-pill text-white btn-avada">Buy Avada today    <i class="fas fa-arrow-right align-items-center"></i></button>
+                <button class="yt-channel-button btn rounded-pill schedule text-white btn-youtube px-3"><i class="icon-ytb fab fa-youtube"></i>Visit my youtube channel</button>
+                <button class="avada-button btn rounded-pill text-white btn-avada">Buy Avada today<i class="icon-avada fas fa-arrow-right align-items-center"></i></button>
             </div>
         </div>
         <div class="container">
@@ -137,4 +137,29 @@ export default {
     top:34%;
     right:21%;
 }
+
+.yt-channel-button {
+    background-color: #4257ef;
+    margin-right:1rem;
+}
+
+.avada-button{
+    background-color:transparent;
+    border-radius:15px;
+    border: 3px solid #78787a;
+    padding:6px 20px;
+    text-align: center;
+}
+
+.icon-ytb, .icon-avada {
+    margin-right:.5rem;
+    
+}
+.icon-avada {
+    margin-left:.5rem;
+    
+}
+
+
+
 </style>

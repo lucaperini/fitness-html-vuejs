@@ -8,20 +8,20 @@
                 </div>
             </div>
             <div class="right-content col-6">
-                <p>tune up your workouts</p>
-                <h2>The best health & fitness advice online</h2> 
-                <img class="d-block" src="../assets/images/unnamed.jpg" alt="">
+                <p class="tune-up">Tune up your workouts</p>
+                <h2 class="mb-4">The best health & fitness advice online</h2> 
+                <img class="d-block mb-4" src="../assets/images/unnamed.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fuga assumenda dignissimos, illo, ipsum dolor sit amet consectetur, adipisicing elit </p>
-                <button class="yt-channel-button btn rounded-pill schedule text-white btn-youtube px-3"><i class="fab fa-youtube mr-2"></i>Visit my YouTube channel</button>
+                <button class="yt-channel-button btn rounded-pill schedule text-white btn-youtube px-3"><i class="fab fa-youtube icon-ytb"></i>Visit my YouTube channel</button>
             </div>
         </div>
         <div class="container mt-5 p-5">
             <div class="row row-cols-3">
                 <div class="col-12 d-flex justify-content-between">
-                    <p>Featured playlists</p>
+                    <p class="featured">Featured playlists</p>
                     <div>
-                    <p class="d-inline-block px-2">view all videos</p>
-                    <i class="fas fa-angle-right"></i>
+                    <p class="videos d-inline-block">View all videos</p>
+                    <i class="all-arrow fas fa-angle-right"></i>
                     </div>
                 </div>
                 <div class="relative">
@@ -67,17 +67,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+h2{
+    font-size: 4rem;
+}
 .container-fluid {
     background-color:white;
     
 }
-
 .service-img {
     width:90%;
     margin-top:-50px;
     margin-left:-12px;
     border-bottom-right-radius: 40px;
     border-top-right-radius: 5px;
+}
+
+.tune-up {
+    font-size: 1.5rem;
+    color: #4257ef;
 }
 
 .play-btn {
@@ -128,5 +136,18 @@ export default {
 
 .text-primary {
     margin-top:0
+}
+
+
+.videos, .all-arrow {
+    font-size:.9rem;
+   margin-right: .2rem;
+    
+}
+.featured {
+    font-size:1.5rem;
+}
+.icon-ytb {
+    margin-right:.5rem;
 }
 </style>
