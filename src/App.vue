@@ -5,6 +5,11 @@
     <Services />
     <Playlist />
     <Mailing />
+    <Card />
+    <Blog />
+    <Cta />
+    <Sponsor />
+    <Video />
   </div>
 </template>
 
@@ -15,6 +20,12 @@ import Jumbo from './components/Jumbo.vue'
 import Services from './components/Services.vue'
 import Playlist from './components/Playlist.vue'
 import Mailing from './components/Mailing.vue'
+import Card from './components/Card.vue'
+import Blog from './components/Blog.vue'
+import Cta from './components/Cta.vue'
+import Sponsor from './components/Sponsor.vue'
+import Video from './components/Video.vue'
+
 
 export default {
   name: 'App',
@@ -24,6 +35,11 @@ export default {
     Services,
     Playlist,
     Mailing,
+    Card,
+    Blog,
+    Cta,
+    Sponsor,
+    Video,
     
   }
 }

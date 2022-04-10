@@ -16,6 +16,7 @@
         <div class="container">
             <div class="row row-cols-3">
                 <div class="relative">
+                    <div class="overlay"></div>
                     <img class="jumbo-img" src="../assets/images/service6-2x.jpg" alt="">
                     <div class="jumbo-description">
                         <i class="fas fa-water text-center text-white fs-1"></i>
@@ -80,7 +81,6 @@ export default {
     border-radius:5px;
     border-bottom-right-radius:3rem;
     margin-top:1rem;
-    filter: brightness(50%);
 }
 
 .service-title {
@@ -157,9 +157,5 @@ export default {
 }
 .icon-avada {
     margin-left:.5rem;
-    
 }
-
-
-
 </style>

@@ -17,7 +17,7 @@
         </div>
         <div class="container mt-5 p-5">
             <div class="row row-cols-3">
-                <div class="col-12 d-flex justify-content-between">
+                <div class="latest col-12 d-flex justify-content-between">
                     <p class="featured">Featured playlists</p>
                     <div>
                     <p class="videos d-inline-block">View all videos</p>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="relative">
                     <div>
-                    <i class="play-btn2 fas fa-play"></i>
+                    <i class="playlist-btn fas fa-play"></i>
                     </div>
                     <img class="jumbo-img" src="../assets/images/video2-2x.jpg" alt="">
                     <div class="text-center">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="relative">
                     <div>
-                        <i class="play-btn2 fas fa-play"></i>
+                        <i class="playlist-btn fas fa-play"></i>
                     </div>
                     <img class="jumbo-img" src="../assets/images/video7-2x.jpg" alt="">
                     <div class="text-center">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="relative">
                     <div>
-                        <i class="play-btn2 fas fa-play"></i>
+                        <i class="playlist-btn fas fa-play"></i>
                     </div>
                     <img class="jumbo-img" src="../assets/images/video9-2x.jpg" alt="">
                     <div class="text-center">
@@ -101,7 +101,7 @@ h2{
     transform: translate(-44%, -48%);
 }
 
-.play-btn2 {
+.playlist-btn {
     background-color: white;
     width: 10px;
     height: 10px;
@@ -138,16 +138,18 @@ h2{
     margin-top:0
 }
 
-
 .videos, .all-arrow {
     font-size:.9rem;
-   margin-right: .2rem;
-    
+    margin-right: .2rem;
 }
+
 .featured {
     font-size:1.5rem;
 }
 .icon-ytb {
     margin-right:.5rem;
+}
+.latest {
+    width:96%;
 }
 </style>
