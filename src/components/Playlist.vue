@@ -9,8 +9,17 @@
             </div>
             <div class="right-content col-6">
                 <p class="tune-up">Tune up your workouts</p>
-                <h2 class="mb-4">The best health & fitness advice online</h2> 
-                <img class="d-block mb-4" src="../assets/images/unnamed.jpg" alt="">
+                <h2 class="mb-4">The best health & fitness advice online</h2>
+                <div class="d-flex">
+                    <div>
+                    <img class="d-block mb-4" src="../assets/images/unnamed.jpg" alt="">
+                </div>
+                <div class="youtube-channel">
+                    <p class="ytb-user">ThemeFusion</p>
+                    <img class="ytb-counter" src="../assets/images/youtube-counter.png" alt="">  
+                </div>
+                </div>
+                
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fuga assumenda dignissimos, illo, ipsum dolor sit amet consectetur, adipisicing elit </p>
                 <button class="yt-channel-button btn rounded-pill schedule text-white btn-youtube px-3"><i class="fab fa-youtube icon-ytb"></i>Visit my YouTube channel</button>
             </div>
@@ -151,5 +160,20 @@ h2{
 }
 .latest {
     width:96%;
+}
+.ytb-counter {
+    width:50%;
+    padding-top:0;
+}
+
+.ytb-user {
+    color: #bc8b96;
+    margin-bottom:10px;
+    
+
+}
+.youtube-channel {
+    margin-left: 1rem;
+    line-height:0;
 }
 </style>

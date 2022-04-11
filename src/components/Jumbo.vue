@@ -3,6 +3,14 @@
         <div>
             <i class="play-btn fas fa-play"></i>
         </div>
+        <div class="box-demos">
+            <i class="box-icon fab fa-connectdevelop"></i>
+            <h5>Demos</h5>
+        </div>
+        <div class="box-discount">
+            <h5 class="fs-2 pt-1 mb-0 text-success"><sup><small>$</small></sup>39</h5>
+            <h5>On sale</h5>
+        </div>
         <div class="row p-5">
             <div class="content col mt-5">
                 <h5 class="above-title mb-2">Certified fitness professional</h5>
@@ -54,6 +62,12 @@ export default {
 
 <style lang="scss" scoped >
 
+.box-demos h5, .box-discount h5{
+    margin-left: .7rem;
+    font-size: 1rem;
+    color: #78787a;
+}
+
 .container {
     width:84%;
 }
@@ -89,7 +103,7 @@ export default {
 }
 
 .service-subtitle {
-    color: rgb(255, 249, 102);
+    color: #fff941;
     font-weight:600;
 }
 
@@ -157,5 +171,32 @@ export default {
 }
 .icon-avada {
     margin-left:.5rem;
+}
+
+.box-demos {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius:10px;
+    position: absolute;
+    top:20%;
+    right:1rem;
+}
+
+.box-discount {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius:10px;
+    position: absolute;
+    top:28%;
+    right:1rem;
+}
+
+.box-icon {
+    font-size:1.8rem;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    margin-bottom: .2rem;
 }
 </style>

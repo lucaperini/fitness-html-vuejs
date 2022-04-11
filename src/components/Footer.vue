@@ -31,9 +31,6 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-
-        </div>
     </div>
 </template>
 
@@ -67,9 +64,9 @@ ul li a{
 }
 
 .container-fluid {
-    height: 400px;
     background-color: #060606;
     margin-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -114,13 +111,5 @@ ul li a{
 .all-arrow {
     color:white;
     margin-right:.3rem;
-}
-
-.footer-copyright {
-    height: 10px;
-    text-align:center;
-    border-top: 1px solid #78787a;
-    margin-top:3rem;
-
 }
 </style>

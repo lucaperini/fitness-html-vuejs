@@ -11,6 +11,7 @@
     <Sponsor />
     <Video />
     <Footer />
+    <Copyright />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import Cta from './components/Cta.vue'
 import Sponsor from './components/Sponsor.vue'
 import Video from './components/Video.vue'
 import Footer from './components/Footer.vue'
+import Copyright from './components/Copyright.vue'
 
 
 export default {
@@ -43,6 +45,7 @@ export default {
     Sponsor,
     Video,
     Footer,
+    Copyright,
     
   }
 }
