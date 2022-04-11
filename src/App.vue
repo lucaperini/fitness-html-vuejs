@@ -10,6 +10,7 @@
     <Cta />
     <Sponsor />
     <Video />
+    <Footer />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import Blog from './components/Blog.vue'
 import Cta from './components/Cta.vue'
 import Sponsor from './components/Sponsor.vue'
 import Video from './components/Video.vue'
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -40,6 +42,7 @@ export default {
     Cta,
     Sponsor,
     Video,
+    Footer,
     
   }
 }
