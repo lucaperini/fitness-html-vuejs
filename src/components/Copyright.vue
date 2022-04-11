@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .bg {
     background-color: #060606;
     height:80px;

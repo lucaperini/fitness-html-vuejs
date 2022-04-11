@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 h1 {
     color:white;
     font-size:3rem;

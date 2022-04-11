@@ -17,8 +17,8 @@
                 <h1 class="title mb-2">Take Control Of Your Health</h1>
                 <i class="fas fa-water text-center text-warning fs-1"></i>
                 <h5 class="under-title pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab perspiciatis corrupti...</h5>
-                <button class="yt-channel-button btn rounded-pill schedule text-white btn-youtube px-3"><i class="icon-ytb fab fa-youtube"></i>Visit my youtube channel</button>
-                <button class="avada-button btn rounded-pill text-white btn-avada">Buy Avada today<i class="icon-avada fas fa-arrow-right align-items-center"></i></button>
+                <button class="youtube-button btn rounded-pill btn-youtube px-3"><i class="icon-ytb fab fa-youtube"></i>Visit my youtube channel</button>
+                <button class="avada-button btn rounded-pill">Buy Avada today<i class="icon-avada fas fa-arrow-right align-items-center"></i></button>
             </div>
         </div>
         <div class="container">
@@ -33,6 +33,7 @@
                     </div>
                 </div>
                 <div class="relative">
+                    <div class="overlay"></div>
                     <img class="jumbo-img" src="../assets/images/box1-2x.jpg" alt="">
                     <div class="jumbo-description">
                         <i class="fas fa-water text-center text-white fs-1"></i>
@@ -41,6 +42,7 @@
                     </div>
                 </div>
                 <div class="relative">
+                    <div class="overlay"></div>
                     <img class="jumbo-img" src="../assets/images/box3-2x.jpg" alt="">
                     <div class="jumbo-description">
                         <i class="fas fa-water text-center text-white fs-1"></i>
@@ -61,12 +63,6 @@ export default {
 </script>
 
 <style lang="scss" scoped >
-
-.box-demos h5, .box-discount h5{
-    margin-left: .7rem;
-    font-size: 1rem;
-    color: #78787a;
-}
 
 .container {
     width:84%;
@@ -112,7 +108,7 @@ export default {
 }
 
 .above-title {
-    color:#bc0428;
+    color: #bc0428;
 }
 
 .under-title {
@@ -128,18 +124,6 @@ export default {
     font-size: 4rem;
 }
 
-.btn-youtube {
-    padding: 12px 20px 10px;
-    background-color: #4257ef;
-    margin-right:1rem;
-}
-
-.btn-avada {
-    padding: 8px 25px 8px;
-    border-color:gray;
-    
-}
-
 .play-btn {
     background-color: white;
     width: 15px;
@@ -152,17 +136,38 @@ export default {
     right:21%;
 }
 
-.yt-channel-button {
-    background-color: #4257ef;
+.youtube-button {
+    padding: 12px 20px 10px;
+    background-color: #4154ff;
     margin-right:1rem;
+    color:white;
+    transition: background-color .1s ease-in;
 }
 
-.avada-button{
+.youtube-button:hover {
+    background-color: #bc0428;
+    color:white;
+}
+
+
+.avada-button {
     background-color:transparent;
     border-radius:15px;
     border: 3px solid #78787a;
     padding:6px 20px;
     text-align: center;
+    transition: background-color 1s easein;
+    transition: color 1s easein;
+    padding: 8px 25px 8px;
+    border-color:gray;
+    color:white;
+    
+}
+
+.avada-button:hover {
+    color: #060606;
+    background-color: white;
+    border-color: white;
 }
 
 .icon-ytb, .icon-avada {
@@ -198,5 +203,20 @@ export default {
     margin-top: .5rem;
     margin-left: 1rem;
     margin-bottom: .2rem;
+}
+
+.box-demos h5, .box-discount h5{
+    margin-left: .7rem;
+    font-size: 1rem;
+    color: #78787a;
+}
+
+.overlay {
+    position:absolute;
+    width:350px;
+    height:420px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius:5px;
+    border-bottom-right-radius:3rem;
 }
 </style>

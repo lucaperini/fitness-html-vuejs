@@ -7,17 +7,17 @@
                 </a>
                 <nav>
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href=""><li>Services</li></a>
-                        <a href=""><li>About</li></a>
-                        <a href=""><li>Videos</li></a>
-                        <a href=""><li>Blog</li></a>
-                        <a href=""><li class="mx-1">Store</li></a>
+                        <li class="text-white">Home</li>
+                        <li>Services</li>
+                        <li>About</li>
+                        <li>Videos</li>
+                        <li>Blog</li>
+                        <li>Store</li>
                     </ul>
                 </nav>
                 <div>
                     <a class="nav-link btn-sm new d-inline-block">new</a>
-                    <button class="btn rounded-pill text-white schedule">Schedule a workout</button>
+                    <button class="workout-button btn rounded-pill text-white schedule">Schedule a workout</button>
                     <div class="d-inline-block">
                         <i class="fas fa-cart-shopping cart mx-5"></i>
                         <i class="fas fa-search cart"></i>
@@ -67,6 +67,8 @@ export default {
 
 <style lang="scss" scoped>
 
+
+
 .header{
     background-color: #060606;
 }
@@ -88,13 +90,13 @@ ul li {
     }
 
 .main-logo {
-    width:45%;
+    width:50%;
     margin-top:1rem;
     
 }
 
 .new {
-    background-color: rgb(255, 249, 102);
+    background-color: #fff941;
     font-size:.8rem;
     color:black;
     text-decoration: none;
@@ -104,21 +106,22 @@ ul li {
     margin-right:1.5rem;
 }
 
-.schedule {
+.workout-button {
     font-size: 1rem;
     padding: 8px 20px 10px;
-    background-color: #4257ef;
+    background-color: #4154ff;
     font-weight:500;
     margin-left:1rem;
-    
+    border:none;
+    transition: background-color .1 ease-in;
 }
 
-.schedule.btn{
-    border:none;
+.workout-button:hover {
+    background-color: #bc0428;
 }
 
 .cart {
-    color:#78787a;
+    color: #78787a;
     vertical-align:bottom;
     }
 

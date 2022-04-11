@@ -42,6 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 h3 {
     text-align:center;
 }
@@ -100,7 +101,7 @@ ul li a{
 }
 
 .social-bar { 
-    color: rgb(229, 80, 80);
+    color: #bc0428;
     font-size: 1rem;
 }
 

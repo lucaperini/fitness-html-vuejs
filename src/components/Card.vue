@@ -50,6 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 h5 {
     color: #fff941;
     margin-bottom: 2.5rem;
@@ -65,6 +66,11 @@ h5 {
     border: 3px solid #4154ff;
     border-radius: 10px;
     margin-right: 2.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.card-item:hover {
+ transform: scale(1.1); 
 }
 
 .card-item p{

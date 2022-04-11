@@ -10,21 +10,21 @@
                     </div>
                 </div>
                 <div>
-                    <img class="jumbo-img" src="../assets/images/video2-2x.jpg" alt="">
+                    <img class="blog-img" src="../assets/images/video2-2x.jpg" alt="">
                     <div>
                         <h4 class="mt-4 mb-0">The best protein shake</h4>
                         <p class="meta-text">By admin | November 26th, 2019 | Gym</p>
                     </div>
                 </div>
                 <div>
-                    <img class="jumbo-img" src="../assets/images/video7-2x.jpg" alt="">
+                    <img class="blog-img" src="../assets/images/video7-2x.jpg" alt="">
                     <div>
                         <h4 class="mt-4 mb-0">Ultimate cardio workout</h4>
                         <p class="meta-text">By admin | November 26th, 2019 | Gym</p>
                     </div>
                 </div>
                 <div>
-                    <img class="jumbo-img" src="../assets/images/video9-2x.jpg" alt="">
+                    <img class="blog-img" src="../assets/images/video9-2x.jpg" alt="">
                     <div>
                         <h4 class="mt-4 mb-0">New juices available now</h4>
                         <p class="meta-text">By admin | November 26th, 2019 | Gym</p>
@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .container-fluid {
     padding-top: 100px;
     height: 700px;
@@ -59,16 +60,17 @@ export default {
     font-size:1.5rem;
 }
 
-.jumbo-img {
+.blog-img {
     width:400px;
     height:260px;
     margin-top:1rem;
 }
+
 h4, .meta-text {
     margin-left: 1rem;
 }
 .meta-text {
-    color: #78787a
+    color: #78787a;
 }
 
 .latest {
