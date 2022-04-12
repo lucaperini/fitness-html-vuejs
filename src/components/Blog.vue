@@ -74,7 +74,7 @@ h4, .meta-text {
 }
 
 .latest {
-    width:96%;
+    width:97%;
     justify-content:space-between;
 }
 

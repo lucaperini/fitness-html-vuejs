@@ -68,6 +68,7 @@ export default {
 .container {
     width:84%;
 }
+
 .bg{
     
     background-size: cover;
@@ -134,7 +135,7 @@ export default {
     border-radius:50%;
     position:absolute;
     padding:1.8rem;
-    top:34%;
+    top:35%;
     right:21%;
 }
 
@@ -196,7 +197,7 @@ export default {
     background-color: white;
     border-radius:10px;
     position: absolute;
-    top:28%;
+    top:29%;
     right:1rem;
 }
 

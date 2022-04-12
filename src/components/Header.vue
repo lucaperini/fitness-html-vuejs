@@ -1,7 +1,7 @@
 <template>
     <header class="container p-3"> 
         <div class="row">
-            <div class="col-12 d-flex">
+            <div class="header-content col-12 d-flex">
                 <a href="">
                 <img class="main-logo" src="../assets/images/logo-2x.png" alt="">
                 </a>
@@ -64,33 +64,36 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/styles/partials/_variables.scss";
-.header{
-    background-color: #060606;
+
+.container{
+    margin-right:0;
 }
+
+.header{
+    background-color: bgdarkColor;
+}
+
+
 
 ul{
     list-style-type: none;
     margin-top:1rem;
     display:inline-block;
-    padding:0;
+    padding: 0;
     font-size: 1.3rem;
-    color: $greyColor;
+    
 }
 
 ul li {
     color: $greyColor;
-    margin-right:1.5rem;
-    display:inline-block;
+    margin-right: 1.5rem;
+    display: inline-block;
 }
 
-.active{
-    color: white;
-    }
 
 .main-logo {
-    width:50%;
-    margin-top:1rem;
-    
+    width: 50%;
+    margin-top: 1rem;
 }
 
 .new {
@@ -122,10 +125,6 @@ ul li {
 .cart {
     color: $greyColor;
     vertical-align:bottom;
-}
-
-.store {
-    margin:0;
 }
 
 </style>

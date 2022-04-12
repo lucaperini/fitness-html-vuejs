@@ -37,9 +37,9 @@
                     <div>
                     <i class="playlist-btn fas fa-play"></i>
                     </div>
-                    <img class="jumbo-img" src="../assets/images/video2-2x.jpg" alt="">
+                    <img class="playlist-img" src="../assets/images/video2-2x.jpg" alt="">
                     <div class="text-center">
-                        <p class="mt-4 mb-0">Thighs & glute workout</p>
+                        <p class="mt-4 mb-1">Thighs & glute workout</p>
                         <p class="text-primary">Increase your mobility</p>
                     </div>
                 </div>
@@ -47,9 +47,9 @@
                     <div>
                         <i class="playlist-btn fas fa-play"></i>
                     </div>
-                    <img class="jumbo-img" src="../assets/images/video7-2x.jpg" alt="">
+                    <img class="playlist-img" src="../assets/images/video7-2x.jpg" alt="">
                     <div class="text-center">
-                        <p class="mt-4 mb-0">Lift, firm & perk up</p>
+                        <p class="mt-4 mb-1">Lift, firm & perk up</p>
                         <p class="text-primary">Feel young again</p>
                     </div>
                 </div>
@@ -57,9 +57,9 @@
                     <div>
                         <i class="playlist-btn fas fa-play"></i>
                     </div>
-                    <img class="jumbo-img" src="../assets/images/video9-2x.jpg" alt="">
+                    <img class="playlist-img" src="../assets/images/video9-2x.jpg" alt="">
                     <div class="text-center">
-                        <p class="mt-4 mb-0">Slim and trim your waist</p>
+                        <p class="mt-4 mb-1">Slim and trim your waist</p>
                         <p class="text-primary">Shed those extra pounds</p>
                     </div>
                 </div>
@@ -126,19 +126,17 @@ h2{
 
 .right-content {
     margin-top:10rem;
-
-}
-.right-content {
     width:600px;
 }
+
 .yt-channel-button {
     background-color: $redColor;
     margin-top:1rem;
 }
 
-.jumbo-img {
-    width:400px;
-    height:260px;
+.playlist-img {
+    width:375px;
+    height:235px;
     border-radius:5px;
     border-bottom-right-radius:3rem;
     margin-top:1rem;

@@ -44,22 +44,21 @@ export default {
     font-size:1.2rem;
     width:720px;
     line-height:1.5rem;
-    
 }
 
 .title {
     color: white;
     font-size: 3rem;
     width:50%;
-    
 }
 
 .content {
     margin-left:6%;
     margin-top:5%;
 }
+
 .mailing{
-    width:500px;
+    width:350px;
     padding:10px 8px;
     margin-top:2rem;
     border: none;
@@ -71,7 +70,6 @@ export default {
     padding:10px 8px;
     border: none;
     margin-right:2rem;
-    
 }
 
 </style>
