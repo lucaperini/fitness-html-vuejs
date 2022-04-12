@@ -15,12 +15,15 @@
                 </div>
                 <div class="footer-column">
                     <h5 class="recent text-white pb-4 text-uppercase">Recent Posts</h5>
-                    <ul>
-                        <li><i class="all-arrow fas fa-angle-right"></i><a href="">The best protein shake</a></li>
+                    <ul v-for="(element, index) in articlesList" :key="index">
+                        <li><i class="all-arrow fas fa-angle-right"></i><a href="">{{element.title}}</a></li>
+                        
+                        
+                        <!-- <li><i class="all-arrow fas fa-angle-right"></i><a href="">The best protein shake</a></li>
                         <li><i class="all-arrow fas fa-angle-right"></i><a href="">Ultimate cardio workout</a></li>
                         <li><i class="all-arrow fas fa-angle-right"></i><a href="">New juices available now</a></li>
                         <li><i class="all-arrow fas fa-angle-right"></i><a href="">Tips to find training partners</a></li>
-                        <li><i class="all-arrow fas fa-angle-right"></i><a href="">20 best healthy recipes</a></li>
+                        <li><i class="all-arrow fas fa-angle-right"></i><a href="">20 best healthy recipes</a></li> -->
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -36,12 +39,38 @@
 
 <script>
 export default {
-    name: 'FooterIndex'
+    name: 'FooterIndex',
+    data: function(){
+        return {
+            articlesList: [
+                {
+                    title:"The best protein shake",
+                    url:"#",
+                },
+                {
+                    title:"Ultimate cardio workout",
+                    url:"#",
+                },
+                {
+                    title:"New juices available now",
+                    url:"#",
+                },
+                {
+                    title:"Tips to find training partners",
+                    url:"#",
+                },
+                {
+                    title:"20 best healthy recipes",
+                    url:"#",
+                },
+            ],
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-
+@import "./src/styles/partials/_variables.scss";
 
 h3 {
     text-align:center;
@@ -65,7 +94,7 @@ ul li a{
 }
 
 .container-fluid {
-    background-color: #060606;
+    background-color: $bgdarkColor;
     margin-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -74,7 +103,7 @@ ul li a{
 .footer-column {
     width:300px;
     text-align: center;
-    color: #78787a;
+    color: $greyColor;
     margin-right: 5rem;
 }
 
@@ -101,7 +130,7 @@ ul li a{
 }
 
 .social-bar { 
-    color: #bc0428;
+    color: $redColor;
     font-size: 1rem;
 }
 

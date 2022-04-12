@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/styles/partials/_variables.scss";
+
 .container-fluid {
     background-color: white;
     padding-top: 3rem;
@@ -69,10 +71,11 @@ export default {
 }
 
 .sponsor-icon {
-    color: #4154ff;
+    color: $blueColor;
 }
 
 .sponsor-text {
-    color: #78787a;
+    color: $greyColor;
 }
+
 </style>

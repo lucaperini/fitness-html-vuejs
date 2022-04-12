@@ -18,46 +18,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h1 {
-        font-size:3rem;
-        color:white;
-        text-align:center;
-        margin-top:30%;
-        margin-left:20%;
-       
-    }
+@import "./src/styles/partials/_variables.scss";
 
-    .container-fluid {
-        background: rgb(22,36,206);
-        background: linear-gradient(147deg, rgba(22,36,206,1) 0%, rgba(241,8,8,1) 81%);
-    }
+h1 {
+    font-size:3rem;
+    color:white;
+    text-align:center;
+    margin-top:30%;
+    margin-left:20%;
+}
 
-    .jumbo-img {
-        width:400px;
-        height:430px;
-    }
+.container-fluid {
+    background: rgb(22,36,206);
+    background: linear-gradient(147deg, rgba(22,36,206,1) 0%, rgba(241,8,8,1) 81%);
+}
 
-    .quote-wrapper {
-        width:80%;
-    }
+.jumbo-img {
+    width:400px;
+    height:430px;
+}
 
-    .testimonial {
-        border-radius:50%;
-        width:10%;
-        display:inline-block;
-        margin-left:8%;
-    }
+.quote-wrapper {
+    width:80%;
+}
 
-    .author-quote-wrapper{
-        margin-left:40%;
-        margin-bottom:15%;
-        padding:2px;
-    }
-    .separator {
-        margin-left: 55%;
-    }
-    span,p {
-        color: #78787a;
-        margin-left:1rem;
-    }
+.testimonial {
+    border-radius:50%;
+    width:10%;
+    display:inline-block;
+    margin-left:8%;
+}
+
+.author-quote-wrapper{
+    margin-left:40%;
+    margin-bottom:15%;
+    padding:2px;
+}
+
+.separator {
+    margin-left: 55%;
+}
+
+span,p {
+    color: $greyColor;
+    margin-left:1rem;
+}
+
 </style>

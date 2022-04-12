@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "./src/styles/partials/_variables.scss";
 
 .container-fluid {
     padding-top: 100px;
@@ -70,7 +70,7 @@ h4, .meta-text {
     margin-left: 1rem;
 }
 .meta-text {
-    color: #78787a;
+    color: $greyColor;
 }
 
 .latest {

@@ -63,6 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped >
+@import "./src/styles/partials/_variables.scss";
 
 .container {
     width:84%;
@@ -99,7 +100,7 @@ export default {
 }
 
 .service-subtitle {
-    color: #fff941;
+    color: $yellowColor;
     font-weight:600;
 }
 
@@ -108,11 +109,12 @@ export default {
 }
 
 .above-title {
-    color: #bc0428;
+    color: $redColor;
+    font-size:1.5rem;
 }
 
 .under-title {
-    color: #78787a;
+    color: $greyColor;
     font-weight:400;
     margin-top:1rem;
     font-size:1.2rem;
@@ -128,7 +130,7 @@ export default {
     background-color: white;
     width: 15px;
     height: 15px;
-    color:#4257ef;
+    color: $blueColor;
     border-radius:50%;
     position:absolute;
     padding:1.8rem;
@@ -138,14 +140,14 @@ export default {
 
 .youtube-button {
     padding: 12px 20px 10px;
-    background-color: #4154ff;
+    background-color: $blueColor;
     margin-right:1rem;
     color:white;
     transition: background-color .1s ease-in;
 }
 
 .youtube-button:hover {
-    background-color: #bc0428;
+    background-color: $redColor;
     color:white;
 }
 
@@ -159,13 +161,13 @@ export default {
     transition: background-color 1s easein;
     transition: color 1s easein;
     padding: 8px 25px 8px;
-    border-color:gray;
+    border-color: $greyColor;
     color:white;
     
 }
 
 .avada-button:hover {
-    color: #060606;
+    color: $bgdarkColor;
     background-color: white;
     border-color: white;
 }

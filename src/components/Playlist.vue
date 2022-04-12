@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/styles/partials/_variables.scss";
 
 h2{
     font-size: 4rem;
@@ -94,14 +95,14 @@ h2{
 
 .tune-up {
     font-size: 1.5rem;
-    color: #4257ef;
+    color: $blueColor;
 }
 
 .play-btn {
     background-color: white;
     width: 15px;
     height: 15px;
-    color:#4257ef;
+    color:$blueColor;
     border-radius:50%;
     position:absolute;
     padding:1.8rem;
@@ -114,7 +115,7 @@ h2{
     background-color: white;
     width: 10px;
     height: 10px;
-    color:#4257ef;
+    color: $blueColor;
     border-radius:50%;
     position:absolute;
     padding:1rem;
@@ -131,7 +132,7 @@ h2{
     width:600px;
 }
 .yt-channel-button {
-    background-color: #bc0428;
+    background-color: $redColor;
     margin-top:1rem;
 }
 

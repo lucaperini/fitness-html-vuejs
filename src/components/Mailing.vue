@@ -5,7 +5,7 @@
                 <h5 class="above-title mb-2">Join our mailing list today</h5>
                 <h1 class="title mb-3">Insider offers & flash sales in your inbox every week.</h1>
                 <i class="d-block fas fa-water text-center text-warning fs-1 mb-3"></i>
-                <input class="mailing bg-light rounded-pill text-info mr-1 p-2" placeholder="Inserisci il tuo indirizzo e-mail...">
+                <input class="mailing bg-light rounded-pill text-info  px-3" placeholder="Inserisci il tuo indirizzo e-mail*">
                 <button class="subscribe btn bg-primary rounded-pill text-white">Subscribe</button>
                 <h5 class="under-title mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iste exercitationem tempora cumque? Lorem ipsum dolor sit amet</h5>
             </div>
@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/styles/partials/_variables.scss";
+
 .bg{
     background-size: cover;
     background-position-x:right;
@@ -31,11 +33,12 @@ export default {
 }
 
 .above-title {
-    color:#bc0428;
+    color: $redColor;
+    font-size: 1.5rem;
 }
 
 .under-title {
-    color: #78787a;
+    color: $greyColor;
     font-weight:400;
     margin-top:4rem;
     font-size:1.2rem;

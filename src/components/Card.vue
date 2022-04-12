@@ -49,21 +49,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "./src/styles/partials/_variables.scss";
 
 h5 {
-    color: #fff941;
+    color: $yellowColor;
     margin-bottom: 2.5rem;
 }
 .container {
-    background-color:#060606;
+    background-color: $bgdarkColor;
     width:100%;
 }
 
 .card-item {
     width: 350px;
     height: 500px;
-    border: 3px solid #4154ff;
+    border: 3px solid $blueColor;
     border-radius: 10px;
     margin-right: 2.5rem;
     transition: all .2s ease-in-out;
@@ -74,7 +74,7 @@ h5 {
 }
 
 .card-item p{
-    color: #78787a;
+    color: $greyColor;
     margin-bottom: 2rem;
     font-weight:600;
     align-items:center;
@@ -99,6 +99,5 @@ h5 {
 .card-content {
     margin-top:5%;
 }
-
 
 </style>

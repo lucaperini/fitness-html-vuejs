@@ -24,6 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/styles/partials/_variables.scss";
+
 .container-fluid {
     height:550px;
     width:100%;
@@ -52,7 +54,7 @@ h1 {
 }
 
 .video-wrapper h2 {
-    color: #fff941;
+    color: $yellowColor;
     font-size:2rem;
 }
 
@@ -60,7 +62,7 @@ h1 {
     background-color: white;
     width: 15px;
     height: 15px;
-    color:#4257ef;
+    color: $blueColor;
     border-radius:50%;
     position:absolute;
     padding:1.8rem;
@@ -69,4 +71,5 @@ h1 {
     transform: translate(-50%, -50%);
     
 }
+
 </style>

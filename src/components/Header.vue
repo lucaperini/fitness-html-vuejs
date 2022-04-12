@@ -1,22 +1,17 @@
 <template>
     <header class="container p-3"> 
         <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 d-flex">
                 <a href="">
                 <img class="main-logo" src="../assets/images/logo-2x.png" alt="">
                 </a>
                 <nav>
-                    <ul>
-                        <li class="text-white">Home</li>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Videos</li>
-                        <li>Blog</li>
-                        <li>Store</li>
+                    <ul v-for="(element, index) in linkList" :key="index">
+                        <a href=""><li :class="element.myclass">{{element.text}}</li></a>
                     </ul>
                 </nav>
                 <div>
-                    <a class="nav-link btn-sm new d-inline-block">new</a>
+                    <a class="btn-sm new d-inline-block">new</a>
                     <button class="workout-button btn rounded-pill text-white schedule">Schedule a workout</button>
                     <div class="d-inline-block">
                         <i class="fas fa-cart-shopping cart mx-5"></i>
@@ -38,6 +33,7 @@ export default {
                 {
                     text:"Home",
                     url:"#",
+                    myclass:"text-white"
                 },
                 {
                     text:"Services",
@@ -58,6 +54,7 @@ export default {
                 {
                     text:"Store",
                     url:"#",
+                    myclass:"m-0",
                 },
             ],
         }
@@ -66,23 +63,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
+@import "./src/styles/partials/_variables.scss";
 .header{
     background-color: #060606;
 }
 
-ul {
+ul{
     list-style-type: none;
     margin-top:1rem;
+    display:inline-block;
+    padding:0;
+    font-size: 1.3rem;
+    color: $greyColor;
 }
 
 ul li {
-    color: #78787a;
+    color: $greyColor;
     margin-right:1.5rem;
     display:inline-block;
-    font-size:1.3rem;
 }
 
 .active{
@@ -96,20 +94,21 @@ ul li {
 }
 
 .new {
-    background-color: #fff941;
+    background-color: $yellowColor;
     font-size:.8rem;
     color:black;
-    text-decoration: none;
+    text-decoration: underlined;
     padding:2px 5px 3px;
     text-align:center;
     margin-top:1.3rem;
-    margin-right:1.5rem;
+    margin-right:1rem;
+    margin-left: .3rem;
 }
 
 .workout-button {
     font-size: 1rem;
     padding: 8px 20px 10px;
-    background-color: #4154ff;
+    background-color: $blueColor;
     font-weight:500;
     margin-left:1rem;
     border:none;
@@ -117,22 +116,16 @@ ul li {
 }
 
 .workout-button:hover {
-    background-color: #bc0428;
+    background-color: $redColor;
 }
 
 .cart {
-    color: #78787a;
+    color: $greyColor;
     vertical-align:bottom;
-    }
-
-.nav-link:hover {
-    color: #78787a;
 }
 
-.nav-link:active {
-    color: white;
+.store {
+    margin:0;
 }
-a:active {
-    color:white;
-}
+
 </style>

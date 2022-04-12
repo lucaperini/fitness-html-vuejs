@@ -53,10 +53,11 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&display=swap');
-  @import "../src/styles/style.scss";
+@import "../src/styles/partials/_variables.scss";
+@import "../src/styles/style.scss";
   
 #app {
-  background-color: #060606;
+  background-color: $bgdarkColor;
   font-family: 'Barlow Semi Condensed', Helvetica, Arial, sans-serif;
   
 }

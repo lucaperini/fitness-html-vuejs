@@ -20,12 +20,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "./src/styles/partials/_variables.scss";
 
 .bg {
-    background-color: #060606;
+    background-color: $bgdarkColor;
     height:80px;
-    border-top: 1px solid #78787a;
+    border-top: 1px solid $greyColor;
 }
 
 .copy-text {
