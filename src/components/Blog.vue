@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row row-cols-3">
-                <div class="latest col-12 d-flex justify-content-between">
+                <div class="latest col-12 d-flex">
                     <p class="featured">Latest articles</p>
                     <div>
                     <p class="videos d-inline-block">Read all articles</p>
@@ -75,6 +75,7 @@ h4, .meta-text {
 
 .latest {
     width:96%;
+    justify-content:space-between;
 }
 
 </style>

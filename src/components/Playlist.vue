@@ -26,7 +26,7 @@
         </div>
         <div class="container mt-5 p-5">
             <div class="row row-cols-3">
-                <div class="latest col-12 d-flex justify-content-between">
+                <div class="latest col-12 d-flex">
                     <p class="featured">Featured playlists</p>
                     <div>
                     <p class="videos d-inline-block">View all videos</p>
@@ -161,6 +161,7 @@ h2{
 }
 .latest {
     width:96%;
+    justify-content:space-between;
 }
 .ytb-counter {
     width:50%;
