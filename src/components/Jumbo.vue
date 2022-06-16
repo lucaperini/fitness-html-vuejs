@@ -197,7 +197,7 @@ export default {
     background-color: white;
     border-radius:10px;
     position: absolute;
-    top:29%;
+    top:240px;
     right:1rem;
 }
 
